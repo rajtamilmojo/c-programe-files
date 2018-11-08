@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	int rupees[10]={2000,500,200,100,50,20,10,5,2,1};
+	int amount;
+	int i;
+	printf("enter your amount:");
+	scanf("%d",&amount);
+	for(i=0;i<10;i++)
+	{
+		printf("\n%d no of notes %d",rupees[i],amount/rupees[i]);
+		amount=amount%rupees[i];
+	}
+	return 0;
+}

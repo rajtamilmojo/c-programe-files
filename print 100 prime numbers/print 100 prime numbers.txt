@@ -1,0 +1,30 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+int main()
+{
+    long n=0;
+    int pc=0,primeflag,i,upto;
+    printf("s.no   prime number");
+    while(pc<=100)
+    {
+        ++n;
+        primeflag=1;
+        upto=sqrt(n);
+        for(i=2;i<=upto;i++)
+        {
+            if(n%i==0)
+            {
+                primeflag=0;
+                break;
+            }
+        }
+        if(primeflag==1)
+        {
+            pc++;
+        printf("\n  %d   %d",pc,n);
+        }
+
+
+    }
+}
